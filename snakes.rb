@@ -5,7 +5,6 @@ class SnakesLadders
     @player2_position = 0
     @player1_turn = true
     puts "new game has started, welcome player 1, welcome player 2"
-
   end
 
   def play(die1, die2)

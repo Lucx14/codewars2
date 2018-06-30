@@ -1,28 +1,26 @@
 def remove_smallest(numbers)
 
 
- numbers == [] ? numbers : numbers.delete_at(numbers.index(numbers.min))
+#  numbers == [] ? numbers : numbers.delete_at(numbers.index(numbers.min))
+  res_arr = []
+  numbers.each{|x| res_arr << x}
 
-=begin
-  if numbers == []
-    numbers
 
-  else
+  res_arr == [] ? res_arr : res_arr.delete_at(res_arr.index(res_arr.min))
 
-numbers.delete_at(numbers.index(numbers.min))
-  end
+  print res_arr
+  
 
-=end
 
-print numbers
+#  print numbers
 
 end
 
 
 remove_smallest([1, 2, 3, 4, 5])         #, [2, 3, 4, 5], "Wrong result for [1, 2, 3, 4, 5]")
-remove_smallest([5, 3, 2, 1, 4])         #, [5, 3, 2, 4], "Wrong result for [5, 3, 2, 1, 4]")
-remove_smallest([2, 2, 1, 2, 1])         #, [2, 2, 2, 1], "Wrong result for [2, 2, 1, 2, 1]")
-remove_smallest([])         #, [], "Wrong result for []")
+#remove_smallest([5, 3, 2, 1, 4])         #, [5, 3, 2, 4], "Wrong result for [5, 3, 2, 1, 4]")
+#remove_smallest([2, 2, 1, 2, 1])         #, [2, 2, 2, 1], "Wrong result for [2, 2, 1, 2, 1]")
+#remove_smallest([])         #, [], "Wrong result for []")
 
 
 

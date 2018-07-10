@@ -11,7 +11,9 @@ def in_array(array1, array2)
       end
     }
   }
+  change
 
+  
 
   print res_arr.sort.uniq
 #Return sorted in alphabetical order the strings of a1 that are substrings of a1
